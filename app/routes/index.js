@@ -4,8 +4,8 @@ const router = express.Router();
 
 router.get("/", (req, res) => {
   res.render("main", {
-    title: "My Node App with EJS",
-    message: "Hello, this is your embedded message!",
+    title: "Dito tayo magpractice ng website",
+    message: "kapag nagpush ka sa github matic na mag-aappear yun dito",
   });
 });
 
