@@ -4,7 +4,7 @@ const router = express.Router();
 
 router.get("/", (req, res) => {
   res.render("main", {
-    title: "Dito tayo magpractice ng website",
+    title: "Dito tayo magpractice",
     message: "kapag nagpush ka sa github matic na mag-aappear yun dito",
   });
 });
