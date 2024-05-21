@@ -52,17 +52,7 @@ span{
     color: goldenrod;
     border-bottom: 3px solid goldenrod;
 }
-.contact{
-    padding: 10px 28px;
-    background-color: white;
-    color: black;
-    border: 2px solid transparent;
-    border-radius: 8px;
-    font-size: 16px;
-    letter-spacing: 1px;
-    font-weight: 600;
-    transition: 0.3s ease;
-}
+
 
 .contact:hover{
     background-color:goldenrod ;
@@ -117,7 +107,7 @@ span{
 }
 .btn-2{
     padding: 15px 28px;
-    background-color: orangered;
+    background-color: goldenrod;
     color: white;
     border: 2px solid black;
     border-radius: 8px;
@@ -129,7 +119,7 @@ span{
  }
  .btn-2:hover{
     background-color: white;
-    color: orangered;
+    color: goldenrod;
 }
 .img-box img{
     border-radius: 100%;
@@ -137,36 +127,123 @@ span{
 }
 
 ::-webkit-scrollbar{
-    width: 15px;
+    width: 10px;
 }
 ::-webkit-scrollbar-thumb{
-    background-color: orangered;
+    background-color: goldenrod;
 }
 ::-webkit-scrollbar-track{
     background-color: rgb(0, 0, 0, 0.6);
     width: 50px;
 }
-
-
-
-section.favorite{
-    width: 250;
-    height: 250;
-    background-color: yellowgreen;
-    padding-bottom: 20px;
-    border-radius: 10px;
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12% 8%;
+    gap: 10em;
+    background: black;
 }
-section.contacts{
-    background-color: darkgray;
-    border-radius: 10px;
-    padding-bottom: 20px;
+.about-img img{
+    position: relative;
+    width: 550px;
+    box-shadow: 0 0 25px  goldenrod,
+                0 0 50px  goldenrod;
+    border-radius: 50%;
 }
-footer{
-    background-color: cadetblue;
-    padding-bottom:5px ;
-   
-    padding-left: 5px;
-    padding-right: 5px ;
-    border-radius: 10px;
+.about-content h2{
+    text-align: left;
+    color: white;
+    font-size: 42px;
 }
+.about-content h3{
+    font-size: 62px;
+    color: white;
+}
+.about-content p{
+    color: white;
+    font-size: 20px;
+    margin: 2em 0 3em;
+}
+
+.contact-form h2{
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    font-size: 36px;
+}
+.contact-form form{
+    max-width: 50em;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3em;
+}
+.contact-form .input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contact-form form .input-box input,
+.contact-form form textarea{
+    width: 100%;
+    padding: 1.5em;
+    font-size: 18px;
+    color: black;
+    background: rgb(241, 241, 241);
+    border-radius: .8rem;
+    margin: 1rem 0;
+    resize: none;
+}
+
+.box{
+    width: 345px;
+    display: flex;
+    gap: 2em;
+    padding: 15px 28px;
+}
+.btn-1{
+    padding: 15px 28px;
+    background-color:  goldenrod;
+    color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer
+ }
+ .btn-1:hover{
+    background: rgb(241, 241, 241);
+    color:  goldenrod;
+}
+.box2{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.box3{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.contact-form{
+    text-align: center;
+    background: rgb(241, 241, 241);
+}
+
+footer p {
+    padding: 15px 28px;
+    background-color:  goldenrod;
+    color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+} 
+
 
