@@ -69,32 +69,86 @@ span{
     box-shadow:  0 0 25px goldenrod;
     color: white;
 }
-/* hmmm */
-h1{
-    text-align: center;
-    text-decoration:wavy;
-    font-size: 50px;
+/* home hahahaha*/
+.home{
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(241, 241, 241);
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 30px 12% 0;
+}
+.home-content{
+    max-width: 800px;
+}
+.home-content h3{
+    font-size: 42px;
+}
+.home-content h1{
+    font-size: 62px;
+    line-height: 1.2;
+}
+.home-content p{
+    font-size: 18px;
+    margin: 25 px 0 30px;
+}
+.btn-box{
+    width: 345px;
+    display: flex;
+    gap: 2em;
+}
+.btn-1{
+    padding: 15px 28px;
+    background-color: black;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.btn-1:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+.btn-2{
+    padding: 15px 28px;
+    background-color: orangered;
+    color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer
+ }
+ .btn-2:hover{
+    background-color: white;
+    color: orangered;
+}
+.img-box img{
+    border-radius: 100%;
+    width: 500px;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: orangered;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(0, 0, 0, 0.6);
+    width: 50px;
 }
 
 
-img.ako{
-    width: 250px;
-    height: 250px;
-    padding-left: 10px;
-    border-radius: 10px;
-    align-self:first baseline;
-    text-align: none;
 
-}
-
-.about{
-    background-color: darkgreen;
-    border-radius: 10px;
-    padding-bottom: 20px;
-   
-    
-
-}
 section.favorite{
     width: 250;
     height: 250;
