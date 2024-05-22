@@ -1,5 +1,6 @@
 const path = require("path");
 const express = require("express");
+const { setUncaughtExceptionCaptureCallback } = require("process");
 const router = express.Router();
 
 router.get("/", (req, res) => {
@@ -14,22 +15,16 @@ router.get("/welcome",(req,res) =>{
   res.render("okok",{
     title:"bio",
     ign:"maku",
+    nickname:"Oca",
     age:"20",
     address:"inarawan",
     city:"antipolo",
-    course:"cpe",
-    food:"chicken",
-    sport:"badminton",
-    game:"Ml",
-    anime:"ghibli",
+    course:"COMPUTER ENGINEERING",
     email:"MARKRJOCA00@gmail.com",
     contact:"09000000000",
     github:"MAKRJOCA00",
-    chicksentence:"chicken is my favorite food because of jollibee",
-    sportsentence:"badminton kasi wala trip ko lang",
-    gamesentence:"nakakastress laruin whahaha",
-    animesentence:"ang ganda kasi whahaha ",
     sentence:"all right reserve 2023 - 2024",
+    sentence1:"Future Webdeveloper ,It Specialits or Game Developer",
 
   })
 })

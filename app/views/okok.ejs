@@ -7,57 +7,62 @@
     <title>Profile</title>
 </head>
 <body>
-    <section class="about">
-        <div class="about me ">
-            <h1 class="mee">About Me</h1>
-            <img src="/css/imgs/messs.jpeg" class="ako">
-          <container>
-            <h2> helloo i'm  <%= ign%>  </h2>
-            <p>ako ay <%=age%> years</p>
-            <p>nakatira sa antipolo <%=address%> </p>
-            <p>taking bs <%=course%></p>
-          </container>
+    <header class="header">
+        <a href="#" class="logo">MAKU</a>
+        <nav class="navbar">
+            <a href="#" >Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+      
+    <section class="home">
+        <div class="home-content">
+            <h3>Hi</h3>
+            <h1>I'm <span><%=ign%><br></span> <%=sentence1%> </h1>
+           
+
+            
+        </div>
+        <div class="img-box">
+            <img src="/css/imgs/messs.jpeg" alt="">
         </div>
     </section>
-    <section class="favorite">
-            <h1>My favorites</h1>
-            <div class="container">
-            <h2>foods</h2>
-            <img src="/css/imgs/joy.jpg">
-            <p><%=food%></p>
-            <P><%=chicksentence%></P>
+    
+    <section class="about" id="about">
+
+        <div class="about-img">
+            <img src="bad.jpeg" alt="">
+        </div>
+        <div class="about-content">
+            <h3 class="heading">About <span>Me</span></h3>
+            <p> I have learn some basic skills in python,javascript,and vb.net and in terms of database i  learn how to use xamp, mysql serv,and microsoft access
+            <h2>I AM CURRENTLY TAKING  BACHERLOR OF SCIENCE IN <%=course%></h2>
+           
+        </div>
+    </section>
+
+    <section class="contact-form" id="contact">
+        <h2 class="contact-me">Contact <span> Me </span></h2>
+
+        <form action="#">
+
+            <div class="box1">
+                <p class="btn-1">email me in here <%=email%></p>
             </div>
 
-            <h2>sports</h2>
-            <img src="/css/imgs/badminton.jpg">
-            <p><%=sport%></p>
-            <p><%=sportsentence%></p>
+            <div class="box2">
+                <p class="btn-1">Contact me in here <%=contact%></p>
+            </div>
 
-            <h2>game</h2>
-            <img src="/css/imgs/mobile.jpg">
-            <p><%=game%></p>
-            <p><%=gamesentence%></p>
+            <div class="box3">
+                <p class="btn-1">Here my Github Account <%=github%></p>
+            </div>
 
-            <h2>movies</h2>
-            <img src="/css/imgs/ghibli.jpg">
-            <p><%=anime%></p>
-            <p><%=animesentence%></p> 
-             </div>
     </section>
-    <section class="contacts">
-        <div>
-            <h1>Contacts</h1>
-            <h2><%=email%></h2>
-            <button>sumbit your email</button>
-            <h2><%=contact%></h2>
-            <button>enter your contact number</button>
-            <h2><%=github%></h2>
-            <Button>press me </Button>
-        </div>
-    </section>
+    <footer id="footer">
+        <p>  Created in Month of May 21,2024. All rights reserved.</p>
+    </footer>
 </body>
-<footer>
-    <p><%=sentence%></p>
-
-</footer>
 </html>
