@@ -7,7 +7,7 @@ router.get("/", (req, res) => {
   res.render("main", {
     title: "Dito tayo magpractice",
     message: "kapag nagpush ka sa github matic na mag-aappear yun dito",
-    note:"note note notice ",aku
+    note:"note note notice ",
   });
 });
 
