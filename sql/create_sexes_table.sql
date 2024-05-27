@@ -1,0 +1,17 @@
+IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Sexes')
+BEGIN
+  CREATE TABLE Sexes(
+    id INT PRIMARY KEY IDENTITY(1,1),
+    name NVARCHAR(255) NOT NULL,
+    active BIT NOT NULL,
+  );
+
+  INSERT INTO Sexes(name, active)
+  SELECT 'Male', 1
+  UNION ALL
+  SELECT 'Female', 1
+  UNION ALL
+  SELECT 'Bading', 1
+  UNION ALL
+  SELECT 'Tomboy', 1
+END;
