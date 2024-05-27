@@ -16,6 +16,6 @@ config.db_pool = {
   idleTimeoutMillis: 30000,
 };
 
-config.app_port = process.env.APP_PORT || 3000;
+config.app_port = process.env.PORT || 3000;
 
 module.exports = config;
